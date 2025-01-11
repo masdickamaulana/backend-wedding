@@ -7,7 +7,7 @@ fastify.register(require('./plugins/mongodb'));
 fastify.register(jwt, { secret: process.env.JWT_SECRET });
 
 fastify.register(require('@fastify/cors'), {
-  origin: 'http://localhost:3000',
+  origin: 'https://frontend-wedding-two.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Metode HTTP yang diizinkan
 });
 
